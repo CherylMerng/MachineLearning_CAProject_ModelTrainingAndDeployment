@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var result = (string)TempData["result"];
+
+}
+
+<form method="POST" action="Home\Model1">
+    <label for="a">Sepal Length (cm)</label>
+    <br />
+    <input type="number" step="0.01" id="a" name="a"/>
+    <br/>
+    <label for="b">Sepal Width (cm)</label>
+    <br />
+    <input type="number" step="0.01" id="b" name="b"/>
+    <br />
+    <label for="c">Petal Length (cm)</label>
+    <br />
+    <input type="number" step="0.01" id="c" name="c" />
+    <br />
+    <label for="d">Petal Width (cm)</label>
+    <br />
+    <input type="number" step="0.01" id="d" name="d" /><br />
+    <br/>
+    <button type="submit" class="btn btn-secondary">Test Model</button>
+</form>
+
+<div> Result is : @result </div>
